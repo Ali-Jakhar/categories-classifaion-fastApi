@@ -42,7 +42,7 @@ starlette==0.17.1
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow==2.4.0
+tensorflow==2.5.0
 tensorflow-estimator==2.4.0
 termcolor==1.1.0
 typing-extensions==3.7.4.3
