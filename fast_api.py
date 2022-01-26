@@ -6,8 +6,7 @@ import numpy as np
 import uvicorn
 
 app = FastAPI()
-# model= load_model("model/vgg-16-model.h5")
-model= load_model("http://drive.google.com/file/d/1Adq0z36sl5pvmAwsNblTav3vu5ww995S")
+model= load_model("vgg-16-model.h5")
 
 def read_imagefile(file) -> Image.Image:
     image = Image.open(BytesIO(file))
@@ -31,4 +30,3 @@ async def image_classifier(file: UploadFile=File(...)):
     return o
 if __name__ =='main':
     uvicorn.run(app,host='127.0.0.1',port=8000)
-
